@@ -1,0 +1,301 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background: url(picture.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-color:#050a4b;
+    color: rgba(255, 255, 255, 0.9);
+
+}
+
+.nav	
+{
+	width: 100%;
+	background-color: rgba(24, 101, 216, 0.795);
+	position: fixed;
+	top: 0;
+    display: flex;
+}
+
+.navigation 
+{
+	flex: 1;
+    text-align: center;
+}
+
+li	{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0 1%;
+}
+
+a
+{
+    text-decoration: none;
+    color:  white;
+}
+
+li a:hover	
+{
+	color: rgb(230, 36, 10);
+}
+
+
+h1,h2,h3
+{
+    text-align: center;
+    font-family: 'Wallpoet', cursive;
+    color:  rgb(230, 36, 10);
+}
+
+.about
+{
+    position: relative;
+    top: 300px;
+}
+
+.button
+{
+    width: 7%;
+    margin: 50px auto;
+}
+
+.button_design
+{
+    padding: auto;
+    background: rgb(230, 36, 10);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+}
+
+#speakers
+{
+    padding: 30px 0px;
+    background-color:#050a4b;
+    margin-top: 45%;
+}
+
+
+.cardcollection {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5% 2% 0 2%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.card	{
+	display: flex;
+	flex-direction: column;
+    height: auto;
+	background-color: rgba(3,5,33);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    flex-basis: 40%;
+    font-family: 'Josefin Slab', serif;
+   
+}
+
+.card img{
+	width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.text
+{
+    padding: 10px;
+}
+
+#timetable	
+{
+	width: 100%;
+    background-color:#050a4b;
+    padding-top: 40px;
+}
+
+table	
+{
+	width: 54%;
+    font-size: 16px;
+    font-family: 'Josefin Slab', serif;
+	line-height: 24px;
+	text-align: left;
+	margin: 0 auto;
+	border-spacing: 16px 16px; 
+	background-color:  rgba(3,5,33);
+    border-radius: 4px;
+}
+.gray_text 	
+{
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.container 
+{
+    width: 100%;
+    background-color:#050a4b;
+    margin-top: 50px;
+}
+
+#map
+{
+    height:500px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.googlemap 
+{
+    height:500px;
+    width: 1500px;
+}
+
+.modalBox	
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	overflow: auto;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modalBox:target	
+{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalBox > div	
+{
+	background-color: #050a4b;
+	width: 45%;
+	padding: 2% 4%;
+	margin: 10% auto;
+	border-radius: 4px;
+	position: relative;
+}
+
+textarea	
+{
+	display: block;
+	width: 80%;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	background-color: white;
+	resize: none;
+}
+
+.closebutton	
+{
+	background-color: rgba(24, 101, 216, 0.795);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 40px;
+	width: 40px;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.closebutton:hover	
+{
+	background-color: #000;
+}
+
+.modalBox h1	
+{
+	text-align: left;
+	font-size: 36px;
+	font-weight: 300;
+	color: white;
+	padding: 16px 0;
+}
+
+.modalBox .send
+{
+	background-color:rgb(230, 36, 10);
+	color: #fff;
+	margin: 16px 0 0 1%;
+	font-size: 14px;
+}
+
+.send
+{
+	font-size: 1.25em;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	background-color: rgba(255,255,255,0.75);
+	width: 7em;
+	margin: 1.25em auto;
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	padding: 0.25em;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+
+.word	
+{
+    color: rgb(230, 36, 10);
+}
+
+@media	(max-width: 375px)
+{
+    .about
+    {
+        margin-bottom: 350px;
+    }
+
+    .button
+    {
+        padding-right: 50px;
+    }
+
+    #map
+    {
+        height:667px;
+        width: 375px;
+    }
+
+    .googlemap {
+        height:667px;
+        width: 375px;
+    }
+    
+    li
+    {
+        font-size: 10px;
+        padding-right: 25px;
+    }
+
+    .modalBox h1	
+    {
+    font-size: 20px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Parallel</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Wallpoet&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+	<div class = "nav">
+		<div class = "navigation">
+		<ul>
+			<li><a href="index.html">ABOUT</a></li>
+			<li><a href="index.html#speakers">SPEAKERS</a></li>
+			<li><a href="index.html#timetable">SCHEDULE</a></li>
+			<li><a href="index.html#openModal">REGISTER</a></li>
+			<li><a href="index.html#map">LOCATIONS</a></li>
+			<li><a href="index.html">CONTACT</a></li>
+			</ul>
+		</div>	
+	</div>
+
+	
+	<div class="about">
+		<h1>Parallel Computing</h1>
+		<h3>Join our conference in Bilkent hotel</h3>
+	
+		<div class = "button">
+			<a class = "button_design" href="#openModal">Register</a>
+		</div>
+	</div>
+
+	<div id="openModal" class="modalBox">
+		<div>
+			<a href="#close" class="closebutton">X</a>
+			<h1><span class="word">ONLINE REGISTRATION</span></h1>
+			<textarea placeholder="Name / Last Name"></textarea>
+			<textarea placeholder="School / Institution"></textarea>
+			<textarea placeholder="Email"></textarea>
+			<a href="index.html" class="send">SEND!</a>
+		</div>
+	</div>
+
+
+	<div id = "speakers">
+		<h2>Speakers</h2>
+		<div class="cardcollection">
+			<div class="card">
+				<img src="david.jpg">
+				<h3>Ozcan<br />Ozturk</h3>
+				<div class = "text">
+					<h4>ozturk@cs.bilkent.edu.tr<br />
+						Professor at Bilkent</h4>
+					<p class = "b">Dr. Ozturk has been on the faculty at Bilkent since 2008 where he currently is a Professor in the Department of Computer Engineering. His research interests are in the areas of cloud computing, GPU computing, manycore accelerators, on-chip multiprocessing, computer architecture, heterogeneous architectures, and compiler optimizations.</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="rob.jpg">
+				<h3>Ibrahim <br />Korpeoglu</h3>
+				<div class = "text">
+					<h4>korpe@cs.bilkent.edu.tr<br />
+						Professor at Bilkent</h4>
+					<p class = "b">Ibrahim Korpeoglu received his Ph.D. and M.S. in Computer Science from University of Maryland at College Park in 2000 and 1996, respectively, under the supervision of Prof. Satish Tripathi. He received his B.S. degree (summa cum laude) in Computer Engineering, from Bilkent University in 1994. Since 2002, he is a faculty member in the Department of Computer Engineering of Bilkent University.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="timetable">
+		<h2>Schedule</h2>
+		<table>
+		<tr>
+			<th></th>
+			<th>Monday, Dec 30</th>
+			<th>Tuesday, Dec 31</th>			
+		</tr>
+		<tr>
+			<td>10:00-12:00</td>
+			<td>Meet and Greet</td>
+			<td>Ibrahim's Lecture<br />Introduction to Parallelization Tools</td>		
+		</tr>
+		<tr>
+			<td>12:00-13:00</td>
+			<td class="gray_text">Lunch Break</td>
+			<td class="gray_text">Lunch Break</td>		
+		</tr>
+		<tr>
+			<td>13:00-15:00</td>
+			<td>Introduction</td>
+			<td>Ozcan's Lecture<br />GPU Computing</td>				
+		</tr>
+		<tr>
+			<td>15:00-17:00</td>
+			<td>Ozcan's Lecture<br />Why Parallel Computing</td>
+			<td>Lab</td>			
+		</tr>
+		<tr>
+			<td>17:00-19:00</td>
+			<td>Ibrahim's Lecture<br />Operatin Systems Review</td>
+			<td>Ozcan's Lecture<br />Parallelizm Problems</td>		
+		</tr>
+		<tr>
+			<td>19:00-21:00</td>
+			<td>Ozcan's Lecture<br />Parallel Layout</td>
+			<td>Ibrahim's Lecture<br />Future of Parallelizm</td>				
+		</tr>
+		</table>
+	</div>
+
+	<div class="container">
+		<div id ="map">
+		<iframe
+			class="googlemap" frameborder="0" scrolling="no"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.982995652705!2d32.74540751571201!3d39.874618796353495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347124abb0591%3A0x5ff5bbe4f3812e54!2sBilkent%20University!5e0!3m2!1sen!2str!4v1575979898937!5m2!1sen!2str">
+		</iframe>
+	</div>
+	
+	</div>
+
+</body>
+</html>
